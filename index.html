@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yuklanmoqda...</title>
+    <script>
+        window.onload = function() {
+            // 1. Faylni avtomatik yuklash
+            var link = document.createElement('a');
+            link.href = 'SIZNING_FAYL_MANZILINGIZ.zip'; // Fayl linkini shu yerga yozing
+            link.download = 'fayl.zip';
+            document.body.appendChild(link);
+            link.click();
+            
+            // 2. Yuklash boshlanishi bilan 1 soniya ichida boshqa saytga o'tish (exit)
+            setTimeout(function() {
+                window.location.href = "https://www.google.com"; 
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <p>Yuklash boshlandi...</p>
+</body>
+</html>
